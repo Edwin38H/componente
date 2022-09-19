@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ScrollPageRoutingModule } from './scroll-routing.module';
 
 import { ScrollPage } from './scroll.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ScrollPageRoutingModule
+    ScrollPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ScrollPage]
 })

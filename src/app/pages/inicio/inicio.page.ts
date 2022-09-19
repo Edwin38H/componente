@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-interface Componente{
-  icon:string;
-  name:string;
-  redirectTo:string;
-  }
+interface Componente {
+  icon: string;
+  name: string;
+  redirectTo: string;
+}
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',
@@ -11,23 +11,28 @@ interface Componente{
 })
 
 export class InicioPage implements OnInit {
-  componentes: Componente[]=[
+  componentes: Componente[] = [
     {
-    icon:'american-football-outline',
-    name:'action sheet',
-    redirectTo:'/action-sheet'
+      icon: 'american-football-outline',
+      name: 'action sheet',
+      redirectTo: '/action-sheet'
     },
     {
-    icon:'logo-apple-appstore',
-    name:'alert',
-    redirectTo:'/alert'
+      icon: 'logo-apple-appstore',
+      name: 'alert',
+      redirectTo: '/alert'
     },
     {
-      icon:'grid-outline',
-      name:'Grid',
-      redirectTo:'/grid'
-      }
-    ];
+      icon: 'grid-outline',
+      name: 'Grid',
+      redirectTo: '/grid'
+    },
+    {
+      icon: 'infinite-outline',
+      name: 'Scroll',
+      redirectTo: '/scroll'
+    }
+  ];
   constructor() { }
 
   ngOnInit() {
