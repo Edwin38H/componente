@@ -21,7 +21,12 @@ export class InicioPage implements OnInit {
     icon:'logo-apple-appstore',
     name:'alert',
     redirectTo:'/alert'
-    }
+    },
+    {
+      icon:'grid-outline',
+      name:'Grid',
+      redirectTo:'/grid'
+      }
     ];
   constructor() { }
 
