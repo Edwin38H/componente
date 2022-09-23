@@ -4,11 +4,17 @@
       <ion-back-button defaultHref="/" color="primary"></ion-back-button>
     </ion-buttons>
     <ion-title color="primary">List-Reorder</ion-title>
+    <!--BOTON-->
+<ion-buttons slot="end">
+  <ion-button (click)="reorderDisabled=!reorderDisabled">
+    palanca
+    </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content>
   <ion-list>
-    <ion-reorder-group disabled="false" (ionItemReorder)="doReorder($event)">
+    <ion-reorder-group [disabled]="reorderDisabled" (ionItemReorder)="doReorder($event)">
       <ion-item *ngFor="let personaje of personajes">
         <ion-label>{{personaje}}</ion-label>
         <ion-reorder slot="end"></ion-reorder>
