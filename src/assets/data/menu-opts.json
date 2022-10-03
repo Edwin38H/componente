@@ -88,5 +88,10 @@
     "icon":"albums-outline",
     "name":"Slides",
     "redirectTo":"/slides"
-  }
+  },
+  {
+    "icon":"pricetag-outline",
+    "name":"Toast",
+    "redirectTo":"/toast"
+    }
 ]
