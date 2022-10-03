@@ -83,5 +83,10 @@
     "icon": "search-outline",
     "name": "Search",
     "redirectTo": "/search"
+  },
+  {
+    "icon":"albums-outline",
+    "name":"Slides",
+    "redirectTo":"/slides"
   }
 ]
